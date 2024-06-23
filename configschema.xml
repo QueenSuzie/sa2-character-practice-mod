@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="General" display="General">
+			<Property name="disable_cutscenes" type="bool" defaultvalue="True" display="Disable Mini-Cutscenes" alwaysinclude="true">
+				<HelpText>
+					Mini-Cutscenes are the unskippable cutscenes that play at the beginning of certain levels
+					such as Green Forest, Pumpkin Hill, and Egg Quarters to name a few. When this value is enabled,
+					these cutscenes will not play. Uncheck this to restore the mini-cutscenes.
+				</HelpText>
+			</Property>
+			<Property name="hero_rush" type="Sequence" defaultvalue="0" display="Hero Boss Rush Override" alwaysinclude="true">
+				<HelpText>Replaces the "Hero Side" Boss Rush mode with a custom sequence of your choosing</HelpText>
+			</Property>
+			<Property name="dark_rush" type="Sequence" defaultvalue="2" display="Dark Boss Rush Override" alwaysinclude="true">
+				<HelpText>Replaces the "Dark Side" Boss Rush mode with a custom sequence of your choosing</HelpText>
+			</Property>
+			<Property name="all_rush" type="Sequence" defaultvalue="4" display="All Boss Rush Override" alwaysinclude="true">
+				<HelpText>Replaces the "All" Boss Rush mode with a custom sequence of your choosing</HelpText>
+			</Property>
+		</Group>
+	</Groups>
+	<Enums>
+		<Enum name="Sequence">
+			<EnumMember display="Sonic Stages" name="0" />
+			<EnumMember display="Sonic Stages w/ Bosses" name="1" />
+			<EnumMember display="Tails Stages" name="2" />
+			<EnumMember display="Tails Stages w/ Bosses" name="3" />
+			<EnumMember display="Knuckles Stages" name="4" />
+			<EnumMember display="Knuckles Stages w/ Bosses" name="5" />
+			<EnumMember display="Shadow Stages" name="6" />
+			<EnumMember display="Shadow Stages w/ Bosses" name="7" />
+			<EnumMember display="Eggman Stages" name="8" />
+			<EnumMember display="Eggman Stages w/ Bosses" name="9" />
+			<EnumMember display="Rouge Stages" name="10" />
+			<EnumMember display="Rouge Stages w/ Bosses" name="11" />
+		</Enum>
+	</Enums>
+</ConfigSchema>
